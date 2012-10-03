@@ -1,0 +1,38 @@
+body, textarea {
+ background: #fff url(IMG_0861.JPG) no-repeat fixed bottom right;
+ font-size: 1em;
+ font-family: Tahoma, Verdana, Sans-serif;
+ }
+h1 {
+ font-size: 1.75em;
+ margin-bottom: 0em;
+ }
+h2, ul {
+ margin-top: 12px;
+ margin-bottom: 12px;
+ }
+h2 {
+ font-size: 1em;
+ margin-top: 0em;
+ }
+p, ul {
+ font-size: 0.86em;
+ }
+a:link, a:visited {
+ color: #8BA726;
+ text-decoration: none;
+ }
+a:hover {
+ text-decoration: underline;
+ }
+ul {
+ padding-left: 0;
+ margin-left: 0;
+ list-style: none;
+ }
+ul.sites {
+ padding-left: 10px;
+ }
+span {
+ font-size: 10pt;
+ }
