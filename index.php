@@ -59,6 +59,7 @@
 		//print_r($b->getCategories());
 	
 	$hostname = file_exists("/etc/hostname") ? file_get_contents("/etc/hostname") : false;
+	// Fallbacks for Windows machines
 	if (!$hostname && function_exists('gethostname'))
 		$hostname = gethostname();  // Requires PHP 5.3
 	if (!$hostname)
@@ -87,7 +88,7 @@
 
 			<span>Displaying <strong><?php echo $showing.'</strong> of '.sizeof($statuses).' blurb'.(sizeof($statuses)!=1?'s':'') ?></span>
 		</form>
-		<p style="color:grey"><?php
+		<p><?php
 		if (isset($_GET['all']) || sizeof($statuses) < DISPLAY_LIMIT) {
 			foreach ($statuses as $status) {
 				echo $status->toString()."<br />\n";

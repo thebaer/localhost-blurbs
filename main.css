@@ -1,29 +1,65 @@
-body, textarea {
- background: #fff url(IMG_0861.JPG) no-repeat fixed bottom right;
- font-size: 1em;
- font-family: Tahoma, Verdana, Sans-serif;
- }
+@font-face {
+	font-family: 'NotCourierSansRegular';
+	src: url('NotCourierSans.otf');
+	src: url("NotCourierSans.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NotCourierSansBold';
+	src: url('NotCourierSans-Bold.otf');
+	src: url("NotCourierSans-Bold.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background: #D2D5D3;
+	margin: 20px 40px;
+}
+body, button, input, select, textarea {
+	font-family: 'NotCourierSansRegular', Courier New, monospace;
+	font-size: 1em;
+	color: black;
+}
 h1 {
  font-size: 1.75em;
  margin-bottom: 0em;
- }
-h2, ul {
- margin-top: 12px;
- margin-bottom: 12px;
+}
+h1, h2 {
+ background-color: #70B61D;
+ color: #D2D5D3;
+ padding: 0 10px;
+ display: inline-block;
+ font-weight: normal;
  }
 h2 {
- font-size: 1em;
+ font-size: 1.4em;
  margin-top: 0em;
+ }
+h2, ul {
+ margin-top: 0px;
+ margin-bottom: 8px;
  }
 p, ul {
  font-size: 0.86em;
  }
-a:link, a:visited {
- color: #8BA726;
- text-decoration: none;
- }
-a:hover {
- text-decoration: underline;
+a {
+	color: #FF3000;
+	text-decoration: none;
+	padding: 0 4px;
+}
+p a {
+	padding: 0;
+}
+a:hover, a:active {
+	outline: 0;
+	background-color: #FF3000;
+	color: #D2D5D3;
+}
+time {
+ color: #666;
  }
 ul {
  padding-left: 0;
