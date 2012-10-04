@@ -6,7 +6,7 @@ Status posting / logging for a private PHP installation. Made with programmers i
 ## Features
 
 * Bangtags (hashtags, except starting with bang (!))
-* Sticky notes, like [LunchTable](http://www.lunch-table.com)
+* Sticky notes, like [LunchTable](http://www.lunch-table.com/help/#5)
 * On-page PHP evaluater
 * Dynamic list of links
 
