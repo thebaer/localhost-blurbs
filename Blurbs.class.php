@@ -234,7 +234,7 @@ class Blurb {
 	function toString() {
 		$res = '';
 		
-		$res .= $this->getTime();
+		$res .= '<time>' . $this->getTime() . '</time>';
 		$res .= ' - ' . $this->getContent();
 		return $res;
 	}
