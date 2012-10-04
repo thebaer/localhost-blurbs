@@ -77,12 +77,12 @@
 </head>
 <body>
 
-	<h1>Matt's Computer (<?php echo trim($hostname); ?>)</h1>
-	<h2><a href="/">Home</a> | <a href="/?cat=sticky">Sticky Notes</a></h2>
+	<h1>no place like 127.0.0.1</h1>
+	<div style="margin: 8px 0"><a href="/">Home</a> | <a href="/?cat=sticky">Sticky Notes</a></div>
 	
 	<div style="float: left; width: 60%;">
 		<form method="post">
-			<input type="text" name="text" size="40" />
+			<input type="text" name="text" style="width: 60%" />
 			<input type="submit" name="save" value="Save" /> <a style="font-size:10pt" href="?<?= isset($_GET['all']) ? '">View Less' : 'all">View All' ?></a><br />
 
 			<span>Displaying <strong><?php echo $showing.'</strong> of '.sizeof($statuses).' blurb'.(sizeof($statuses)!=1?'s':'') ?></span>
