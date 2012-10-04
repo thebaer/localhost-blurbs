@@ -58,8 +58,8 @@
 		
 		//print_r($b->getCategories());
 	
-	$hostname = file_get_contents("/etc/hostname");
-	if (!$hostname)
+	$hostname = file_exists("/etc/hostname") ? file_get_contents("/etc/hostname") : false;
+	if (!$hostname && function_exists('gethostname'))
 		$hostname = gethostname();  // Requires PHP 5.3
 	if (!$hostname)
 		$hostname = php_uname('n'); // Before PHP 5.3
