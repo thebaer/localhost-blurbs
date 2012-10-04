@@ -126,7 +126,7 @@ class Blurbs {
 	function add($blurb) {
 		$p = new Parser();
 		$new = new Blurb(time(), $blurb);
-		$this->blurbs[$this->count] = $p->parse($new);
+		$this->blurbs[$this->count] = $new; //$p->parse($new);
 		$this->appendData($new);
 		$this->count++;
 	}
