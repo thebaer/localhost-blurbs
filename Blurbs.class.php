@@ -63,7 +63,7 @@ class Blurbs {
 			$c = 0;
 			for ($i=0; $i<$this->limit; $i++) {
 				$b = explode(' - ', $temp[$i]);
-				$new = new Blurb($b[0], $b[1]);
+				$new = new Blurb(array_shift($b), implode(' - ', $b));
 				
 				if ($this->select == '') {
 					// Exclude the sticky notes
